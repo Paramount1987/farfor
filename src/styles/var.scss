@@ -9,7 +9,11 @@ $spacers: map-merge((
         2: ($spacer * 2),
         3: ($spacer * 3),
         4: ($spacer * 4),
-        5: ($spacer * 5)
+        5: ($spacer * 5),
+        6: ($spacer * 6),
+        7: ($spacer * 7),
+        8: ($spacer * 9),
+        9: ($spacer * 9)
 ), $spacers);
 
 //
@@ -24,12 +28,15 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #ab2415 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+
+$gray:      #f3f3f3;
+$gray-d:    #e7e7e7;
 
 // stylelint-enable
 
@@ -58,7 +65,7 @@ $grid-breakpoints: (
         xs: 0,
         sm: 768px,
         md: 1024px,
-        lg: 1400px
+        lg: 1366px
 ) !default;
 
 //@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -71,8 +78,8 @@ $grid-breakpoints: (
 
 $container-max-widths: (
         sm: 720px,
-        md: 960px,
-        lg: 1140px
+        md: 1040px,
+        lg: 1040px
 ) !default;
 
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -81,10 +88,16 @@ $container-max-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-Vollkorn:               Vollkorn, sans-serif;
+$font-family-sans-serif:      'PT Sans', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
+$font-weight-base:            400;
+$line-height-base:            1.5;
+$line-height-md:              1.7;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+// svg encode url
+$arrow-r: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28.06 15.94'%3E%3Cpolygon fill='%23221e1f' points='20.09 0 19.03 1.06 25.19 7.22 0 7.22 0 8.72 25.19 8.72 19.03 14.88 20.09 15.94 28.06 7.97 20.09 0'/%3E%3C/svg%3E%0A";

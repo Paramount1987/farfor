@@ -10,9 +10,14 @@
 </head>
 <body>
 
-{% set title = "Twig.js templating test" %}
+{% set title = "Фарфор" %}
 
-{% block content %}{% endblock %}
+{% include 'header.twig' %}
+
+<div class="wrapper">
+	{% block content %}{% endblock %}
+</div>
+
 
 {% include 'footer.twig' %}
 

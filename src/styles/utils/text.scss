@@ -1,0 +1,37 @@
+.txt {
+
+  &-center {
+    text-align: center;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-red {
+    color: $red;
+  }
+
+  &-vollkrn {
+    font-family: $font-Vollkorn;
+    font-size: 20px;
+  }
+
+  &-uppcase {
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-up(sm) {
+    &-sm-left {
+      text-align: left;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    &-vollkrn {
+      line-height: 1.8;
+    }
+  }
+}
+
