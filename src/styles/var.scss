@@ -89,6 +89,8 @@ $container-max-widths: (
 // Font, line-height, and color for body text, headings, and more.
 
 $font-Vollkorn:               Vollkorn, sans-serif;
+$font-Indira:                 Indira, sans-serif;
+
 $font-family-sans-serif:      'PT Sans', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
@@ -101,3 +103,4 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 
 // svg encode url
 $arrow-r: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28.06 15.94'%3E%3Cpolygon fill='%23221e1f' points='20.09 0 19.03 1.06 25.19 7.22 0 7.22 0 8.72 25.19 8.72 19.03 14.88 20.09 15.94 28.06 7.97 20.09 0'/%3E%3C/svg%3E%0A";
+$arrow-r-white: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28.06 15.94'%3E%3Cpolygon fill='%23fff' points='20.09 0 19.03 1.06 25.19 7.22 0 7.22 0 8.72 25.19 8.72 19.03 14.88 20.09 15.94 28.06 7.97 20.09 0'/%3E%3C/svg%3E%0A";

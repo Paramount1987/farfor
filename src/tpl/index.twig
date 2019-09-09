@@ -1,92 +1,111 @@
 {% extends './inc/page.twig' %}
 
 {% block content %}
-<section class="container py-5 pt-sm-7">
-	<h1 class="h1 txt-center">КОЛЛЕКЦИЯ</h1>
-	{% include "inc/blocks/card-content.twig" %}
-</section>
-
-<section class="bg-gray py-4 pb-sm-9">
+<section class="intro bg-black pb-4 pt-1">
+	{% include "inc/blocks/main-intro-slider.twig" %}
 	<div class="container txt-center">
-		<img src="images/logo-sm.svg" alt="" width="38" height="46" class="mb-3">
-		<p class="txt-vollkrn txt-red mb-0">
-			Представленная вам коллекция русского фарфора собиралась несколько лет.
-			Корниловский фарфор, являющийся
-			основой коллекции, несет в себе огромный культурный код России. Почти столетняя история петербургской
-			мануфактуры отражает все культурные и стилистические тенденции великой российской истории XIX-XX веков:
-			традиции, вкусы, эстетические пристрастия, жизненный уклад граждан того времени
-		</p>
+		<a href="#" class="intro-slider__link">все коллекции</a>
 	</div>
 </section>
 
-<section class="bg-gray-d py-7">
-	<div class="container">
-		<h2 class="h1 txt-center">О КОЛЛЕКЦИОНЕРЕ</h2>
-		{% include "inc/blocks/card-author.twig" %}
-	</div>
-</section>
+<div class="wrapper">
 
-<section class="bg-black py-7">
-	<div class="container">
-		{% include "inc/blocks/card-qoutes.twig" %}
-	</div>
-</section>
+	<section class="container py-5 pt-sm-7">
+		<h1 class="h1 txt-center">КОЛЛЕКЦИЯ</h1>
+		{% include "inc/blocks/card-content.twig" %}
+	</section>
 
-<section class="bg-gray py-7">
-	<div class="container">
-		<div class="card-ct">
-			<div class="card-ct-left">
-				<p class="card-ct__p card-ct__p--xs">
-					Данный сайт представляет собой личную коллекцию господина Юнусова. Вся представленная коллекция —
-					это предметы из производства частных заводов на территории Российской Империи. Особенную ценность в
-					данной коллекции, по мнению её создателя, имеет фарфор изготовленный мануфактурой братьев
-					Корниловых.
-				</p>
-				<p class="card-ct__p card-ct__p--xs">
-					Представленная коллекция собиралась в течение нескольких лет, и сегодня это прекрасная возможность
-					прикоснуться к удивительной истории нашей страны и прочувствовать дух эпохи конца 19-го, начала
-					20-го веков.
-				</p>
-			</div>
-			<div class="card-ct-right">
-				<h4 class="card-ct__title txt-center txt-sm-left mb-0">
-					Помимо коллекционирования, Фарид&nbsp;Юнусов даёт консультации по оценке
-					и&nbsp;возможному приобретению предметов дореволюционного фарфора
-				</h4>
+	<section class="bg-gray py-4 pb-sm-9">
+		<div class="container txt-center">
+			<img src="images/logo-sm.svg" alt="" width="38" height="46" class="mb-3">
+			<p class="txt-vollkrn txt-red mb-0">
+				Представленная вам коллекция русского фарфора собиралась несколько лет.
+				Корниловский фарфор, являющийся
+				основой коллекции, несет в себе огромный культурный код России. Почти столетняя история петербургской
+				мануфактуры отражает все культурные и стилистические тенденции великой российской истории XIX-XX веков:
+				традиции, вкусы, эстетические пристрастия, жизненный уклад граждан того времени
+			</p>
+		</div>
+	</section>
+
+	<section class="bg-gray-d py-7">
+		<div class="container">
+			<h2 class="h1 txt-center">О КОЛЛЕКЦИОНЕРЕ</h2>
+			{% include "inc/blocks/card-author.twig" %}
+		</div>
+	</section>
+
+	<section class="bg-black py-7">
+		<div class="container">
+			{% include "inc/blocks/card-qoutes.twig" %}
+		</div>
+	</section>
+
+	<section class="bg-gray py-7">
+		<div class="container">
+			<div class="card-ct">
+				<div class="card-ct-left">
+					<p class="card-ct__p card-ct__p--xs">
+						Данный сайт представляет собой личную коллекцию господина Юнусова. Вся представленная коллекция —
+						это предметы из производства частных заводов на территории Российской Империи. Особенную ценность в
+						данной коллекции, по мнению её создателя, имеет фарфор изготовленный мануфактурой братьев
+						Корниловых.
+					</p>
+					<p class="card-ct__p card-ct__p--xs">
+						Представленная коллекция собиралась в течение нескольких лет, и сегодня это прекрасная возможность
+						прикоснуться к удивительной истории нашей страны и прочувствовать дух эпохи конца 19-го, начала
+						20-го веков.
+					</p>
+				</div>
+				<div class="card-ct-right">
+					<h4 class="card-ct__title txt-center txt-sm-left mb-0">
+						Помимо коллекционирования, Фарид&nbsp;Юнусов даёт консультации по оценке
+						и&nbsp;возможному приобретению предметов дореволюционного фарфора
+					</h4>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section class="bg-gray-d py-7">
-	<div class="container">
-		{% include "inc/blocks/card-author-2.twig" %}
-	</div>
-</section>
+	<section class="bg-gray-d py-7">
+		<div class="container">
+			{% include "inc/blocks/card-author-2.twig" %}
+		</div>
+	</section>
 
-<section class="bg-gray py-7">
-	<div class="container txt-center mw-760">
-		<p class="card-ct__p mb-4">
-			Именно Сергей помогает развиваться
-			коллекции, принимает активное участие
-			в поиске и&nbsp;оценке новых экспонатов, ведет учетную деятельность коллекции,
-			занимается вопросами реставрации
-			и хранения всех предметов искусства,
-			а также организацией выставочных
-			мероприятий и аналогичных им
-		</p>
-		<img src="images/logo-sm.svg" alt="" width="38" height="46" class="mb-3">
-		<p class="txt-vollkrn txt-red txt-uppcase">
-			Все возникающие вопросы касательно коллекции русского фарфора Фарида
-			Юнусова всегда можно решить с господином Набоких
-		</p>
-	</div>
-</section>
+	<section class="bg-gray py-7">
+		<div class="container txt-center mw-760">
+			<p class="card-ct__p mb-4">
+				Именно Сергей помогает развиваться
+				коллекции, принимает активное участие
+				в поиске и&nbsp;оценке новых экспонатов, ведет учетную деятельность коллекции,
+				занимается вопросами реставрации
+				и хранения всех предметов искусства,
+				а также организацией выставочных
+				мероприятий и аналогичных им
+			</p>
+			<img src="images/logo-sm.svg" alt="" width="38" height="46" class="mb-3">
+			<p class="txt-vollkrn txt-red txt-uppcase">
+				Все возникающие вопросы касательно коллекции русского фарфора Фарида
+				Юнусова всегда можно решить с господином Набоких
+			</p>
+		</div>
+	</section>
 
-<section class="py-7">
-	<div class="container">
-		<h2 class="h1 txt-center">НОВОСТИ</h2>
-	</div>
-</section>
+	<section class="py-7">
+		<div class="container px-lg-0">
+			<h2 class="h1 txt-center">НОВОСТИ</h2>
+			{% include "inc/blocks/history-slider.twig" %}
+		</div>
+	</section>
+
+	<section class="py-6">
+		<div class="container">
+			<h2 class="h1 txt-center mb-2">Пресса о нас</h2>
+			{% include "inc/blocks/press-slider.twig" %}
+		</div>
+	</section>
+
+</div>
 
 {% endblock %}

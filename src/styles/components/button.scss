@@ -6,11 +6,14 @@
 
 .btn {
   display: inline-block;
+  padding: 8px 20px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 14px;
 
   &:focus,
   &.focus {
@@ -31,11 +34,11 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
     background-image: none;
-    background-color: #007bff;
+  }
 
-    &:focus {
-
-    }
+  &-black {
+    border: 1px solid $black;
+    color: $black;
   }
 }
 
@@ -45,42 +48,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-
-//
-// Link buttons
-//
-
-// Make a button look and behave like a link
-.btn-link {
-  background-color: transparent;
-
-  &:focus,
-  &.focus {
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  &:disabled,
-  &.disabled {
-    pointer-events: none;
-  }
-
-  // No need for an active state here
-}
-
-//
-// Block button
-//
-
-.btn-block {
-  display: block;
-  width: 100%;
-
-  // Vertically space out multiple block buttons
-  + .btn-block {
-    margin-top: 5px;
-  }
-}
 
 // Specificity overrides
 input[type="submit"],
