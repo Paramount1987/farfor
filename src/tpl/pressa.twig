@@ -1,0 +1,81 @@
+{% extends './inc/page.twig' %}
+
+{% set articles = [
+    {
+        img: 'images/tmp/card-author.png',
+        title: 'Дореволюционный фарфор из коллекции Фарида Юнусова',
+        text: '31 марта в музее «Ингосстраха» открылась выставка фарфора одного из самых известных его
+                производителей в Российской империи — завода братьев Корниловых. В экспозицию вошла лишь
+                часть большой коллекции главы УК «Ингосстрах-Инвестиции» Фарида Юнусова.',
+        link: '#'
+    },
+    {
+        img: 'images/tmp/card-author.png',
+        title: 'Дореволюционный фарфор из коллекции Фарида Юнусова',
+        text: '31 марта в музее «Ингосстраха» открылась выставка фарфора одного из самых известных его
+                производителей в Российской империи — завода братьев Корниловых. В экспозицию вошла лишь
+                часть большой коллекции главы УК «Ингосстрах-Инвестиции» Фарида Юнусова.',
+        link: '#'
+    },
+    {
+        img: 'images/tmp/card-author.png',
+        title: 'Дореволюционный фарфор из коллекции Фарида Юнусова',
+        text: '31 марта в музее «Ингосстраха» открылась выставка фарфора одного из самых известных его
+                производителей в Российской империи — завода братьев Корниловых. В экспозицию вошла лишь
+                часть большой коллекции главы УК «Ингосстрах-Инвестиции» Фарида Юнусова.',
+        link: '#'
+    },
+    {
+        img: 'images/tmp/card-author.png',
+        title: 'Дореволюционный фарфор из коллекции Фарида Юнусова',
+        text: '31 марта в музее «Ингосстраха» открылась выставка фарфора одного из самых известных его
+                производителей в Российской империи — завода братьев Корниловых. В экспозицию вошла лишь
+                часть большой коллекции главы УК «Ингосстрах-Инвестиции» Фарида Юнусова.',
+        link: '#'
+    }
+] %}
+
+{% block content %}
+
+<div class="wrapper">
+
+    <section class="bg-black pt-8 pb-1">
+        <div class="container txt-center txt-white">
+            <h1 class="h1">Пресса о нас</h1>
+        </div>
+    </section>
+
+    <section class="py-7">
+        <div class="container">
+            <ul class="article-list">
+                {% for item in articles %}
+                <li>
+                    <div class="article">
+                        <div class="article-left">
+                            <img src="{{ item.img }}" alt="" class="article__pic">
+                        </div>
+                        <div class="article-right">
+                            <a href="#" class="article__title">{{ item.title }}</a>
+                            <p class="article__p">{{ item.text }}</p>
+                            <a href="{{ item.link }}" class="btn btn-black">подробнее</a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="container">
+            <ul class="pagination">
+                <li class="page-item"><span class="page-link is-active">1</span></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><span class="page-link">...</span></li>
+                <li class="page-item"><a class="page-link" href="#">10</a></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

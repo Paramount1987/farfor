@@ -1,0 +1,65 @@
+.article {
+  margin-bottom: 80px;
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-left {
+    margin-bottom: 30px;
+  }
+
+  &__pic {
+    max-width: 175px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    font-family: $font-Vollkorn;
+    font-size: 20px;
+    color: $red;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__p {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+
+    &-list {
+  
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 70px;
+        }
+      }
+    }
+
+    &-left {
+      width: 32%;
+      text-align: center;
+    }
+
+    &-right {
+      width: 67%;
+    }
+  }
+}
