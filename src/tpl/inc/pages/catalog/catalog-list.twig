@@ -1,0 +1,89 @@
+{% set items = [
+    {
+        pic: 'images/catalog/catalog-1.png',
+        title: 'Столовый сервиз',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-2.png',
+        title: 'Чайный сервиз 19 века',
+        text: 'роспись цветами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'чайная посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-3.png',
+        title: 'Тарелка с иллюстрацией Билибина',
+        text: 'роспись иллюстрацией Билибина',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-4.png',
+        title: 'Пара декоративных тарелок, с рисунками по мотивам «Волшебного фонаря»',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-5.png',
+        title: 'Фрагмент чайно-столового сервиза',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'чайная посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-6.png',
+        title: 'Пара предметов из частного собрания Николая I',
+        text: 'роспись иллюстрацией Билибина',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-1.png',
+        title: 'Столовый сервиз',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-2.png',
+        title: 'Чайный сервиз 19 века',
+        text: 'роспись цветами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'чайная посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-3.png',
+        title: 'Тарелка с иллюстрацией Билибина',
+        text: 'роспись иллюстрацией Билибина',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-4.png',
+        title: 'Пара декоративных тарелок, с рисунками по мотивам «Волшебного фонаря»',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'столовая посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-5.png',
+        title: 'Фрагмент чайно-столового сервиза',
+        text: 'роспись рыбами, золочение, Корниловы, 1835-1850 гг',
+        tag: 'чайная посуда'
+    },
+    {
+        pic: 'images/catalog/catalog-6.png',
+        title: 'Пара предметов из частного собрания Николая I',
+        text: 'роспись иллюстрацией Билибина',
+        tag: 'столовая посуда'
+    }
+] %}
+
+<ul class="ctlg-list">
+    {% for item in items %}
+        <li>
+            <a href="#" class="ctlg-item txt-white">
+                <img src="{{ item.pic }}" alt="" class="ctlg-item__pic">
+                <span class="ctlg-item-body">
+                    <span class="ctlg-item__title">{{ item.title }}</span>
+                    <span class="ctlg-item__txt">{{ item.text }}</span>
+                    <span class="ctlg-item__tag">{{ item.tag }}</span>
+                </span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

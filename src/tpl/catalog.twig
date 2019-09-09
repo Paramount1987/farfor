@@ -1,0 +1,24 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+
+<div class="wrapper bg-black">
+
+    <section class=" pt-7 pb-3">
+        <div class="container txt-center txt-white">
+            <h1 class="h1 mb-2">Коллекции</h1>
+        </div>
+    </section>
+
+    <section class="ctlg-container">
+        <div class="ctlg-left">
+
+        </div>
+        <div class="ctlg-right">
+            {% include "inc/pages/catalog/catalog-list.twig" %}
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}
