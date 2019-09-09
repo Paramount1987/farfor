@@ -2239,6 +2239,9 @@ template {
 .relative {
   position: relative; }
 
+.border-b-gray {
+  border-bottom: 1px solid rgba(255, 255, 255, .2); }
+
 /**
  * Swiper 4.2.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4031,109 +4034,123 @@ h1, .h1 {
     .footer {
       padding: 70px 55px; } }
 
-.card-ct-left, .card-ct-right {
-  position: relative; }
-
-.card-ct__slider {
-  margin-bottom: 50px;
-  padding-bottom: 50px; }
-  .card-ct__slider .swiper-button-next {
-    right: 50%;
-    -webkit-transform: translate(60px, 0);
-            transform: translate(60px, 0); }
-  .card-ct__slider .swiper-button-prev {
-    left: 50%;
-    right: auto;
-    -webkit-transform: rotate(-180deg) translate(60px, 0);
-            transform: rotate(-180deg) translate(60px, 0); }
-
-.card-ct__pic {
-  width: 100%; }
-  .card-ct__pic--athr {
-    width: auto;
-    max-width: 420px; }
-  .card-ct__pic--lg {
-    width: auto;
-    max-width: 100%; }
-  .card-ct__pic--abs {
-    position: absolute;
-    z-index: 1;
-    top: -100px;
-    right: 100%;
-    max-width: 440px;
-    -webkit-transform: translate(-50px, 0);
-            transform: translate(-50px, 0); }
-
-.card-ct__title {
-  margin-bottom: 30px;
-  font-family: Vollkorn, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #ab2415;
-  line-height: 1.7;
-  text-transform: uppercase; }
-
-.card-ct__p {
-  margin-bottom: 40px;
-  font-size: 22px; }
-
-@media (max-width: 767.98px) {
-  .card-ct__pic--athr {
-    max-width: 193px; }
-  .card-ct__p--xs {
-    font-size: 20px; } }
-
-@media (min-width: 768px) {
-  .card-ct {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .card-ct--quots, .card-ct--sm-center {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .card-ct-left, .card-ct-right {
-      width: 48.5%; }
-    .card-ct__title {
-      padding: 0 25px; }
-    .card-ct__pic--lg {
-      max-width: 650px; }
-    .card-ct__p {
-      margin-bottom: 30px;
-      font-size: 16px; } }
-
-@media (min-width: 1024px) {
+.card-ct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .card-ct-left, .card-ct-right {
-    width: 47.5%; }
-  .card-ct-left--md-large {
-    width: 65%; }
-  .card-ct-right--md-small {
-    width: 30%; }
-  .card-ct__title {
-    padding: 0 10px; }
-  .card-ct__pic--lg {
-    max-width: 590px; } }
-
-@media (min-width: 1366px) {
-  .card-ct-left, .card-ct-right {
-    width: 47%; }
-  .card-ct-left--md-large {
-    width: 65%; }
-  .card-ct-right--md-small {
-    width: 30%; }
-  .card-ct__pic--lg {
-    max-width: 650px; } }
-
-@media (min-width: 1900px) {
-  .card-ct--quots {
     position: relative;
-    left: -260px; }
-  .card-ct__pic--lg {
-    max-width: 950px; } }
+    width: 100%; }
+  .card-ct.order-invers-lg .card-ct-left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .card-ct__slider {
+    margin-bottom: 50px;
+    padding-bottom: 50px; }
+    .card-ct__slider .swiper-button-next {
+      right: 50%;
+      -webkit-transform: translate(60px, 0);
+              transform: translate(60px, 0); }
+    .card-ct__slider .swiper-button-prev {
+      left: 50%;
+      right: auto;
+      -webkit-transform: rotate(-180deg) translate(60px, 0);
+              transform: rotate(-180deg) translate(60px, 0); }
+  .card-ct__pic {
+    width: 100%; }
+    .card-ct__pic--athr {
+      max-width: 420px; }
+    .card-ct__pic--about {
+      max-width: 180px; }
+    .card-ct__pic--lg {
+      width: auto;
+      max-width: 100%; }
+    .card-ct__pic--abs {
+      position: absolute;
+      z-index: 1;
+      top: -100px;
+      right: 100%;
+      max-width: 440px;
+      -webkit-transform: translate(-50px, 0);
+              transform: translate(-50px, 0); }
+  .card-ct__title {
+    margin-bottom: 30px;
+    font-family: Vollkorn, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ab2415;
+    line-height: 1.7;
+    text-transform: uppercase; }
+  .card-ct__p {
+    margin-bottom: 40px;
+    font-size: 22px; }
+  @media (max-width: 767.98px) {
+    .card-ct__pic--athr {
+      max-width: 193px; }
+    .card-ct__p--xs {
+      font-size: 20px; } }
+  @media (min-width: 768px) {
+    .card-ct {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .card-ct--quots, .card-ct--sm-center {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .card-ct-left, .card-ct-right {
+        width: 48.5%; }
+        .card-ct-left--sm-full, .card-ct-right--sm-full {
+          width: 100%; }
+      .card-ct__title {
+        padding: 0 25px; }
+      .card-ct__pic--lg {
+        max-width: 650px; }
+      .card-ct__p {
+        margin-bottom: 30px;
+        font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .card-ct-left, .card-ct-right {
+      width: 47.5%; }
+    .card-ct-left--md-large {
+      width: 65%; }
+    .card-ct-left--md-small {
+      width: 30%; }
+    .card-ct-right--md-large {
+      width: 65%; }
+    .card-ct-right--md-small {
+      width: 30%; }
+    .card-ct.order-invers-lg .card-ct-left {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+    .card-ct__title {
+      padding: 0 10px; }
+    .card-ct__pic--lg {
+      max-width: 590px; } }
+  @media (min-width: 1366px) {
+    .card-ct-left, .card-ct-right {
+      width: 47%; }
+    .card-ct-left--md-large {
+      width: 65%; }
+    .card-ct-left--md-small {
+      width: 30%; }
+    .card-ct-right--md-large {
+      width: 65%; }
+    .card-ct-right--md-small {
+      width: 30%; }
+    .card-ct__pic--lg {
+      max-width: 650px; } }
+  @media (min-width: 1900px) {
+    .card-ct--quots {
+      position: relative;
+      left: -260px; }
+    .card-ct__pic--lg {
+      max-width: 950px; } }
 
 .card-hs__slider .swiper-button-next,
 .card-hs__slider .swiper-button-prev {

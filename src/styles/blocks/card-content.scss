@@ -1,8 +1,17 @@
 .card-ct {
+  display: flex;
+  flex-wrap: wrap;
 
   &-left,
   &-right {
     position: relative;
+    width: 100%;
+  }
+
+  &.order-invers-lg {
+    .card-ct-left {
+      order: 1;
+    }
   }
 
   &__slider {
@@ -24,8 +33,10 @@
     width: 100%;
 
     &--athr {
-      width: auto;
       max-width: 420px;
+    }
+    &--about {
+      max-width: 180px;
     }
     &--lg {
       width: auto;
@@ -74,7 +85,6 @@
   }
 
   @include media-breakpoint-up(sm) {
-    display: flex;
     justify-content: space-between;
 
     &--quots,
@@ -85,6 +95,10 @@
     &-left,
     &-right {
       width: 48.5%;
+
+      &--sm-full {
+        width: 100%;
+      }
     }
 
     &__title {
@@ -113,11 +127,23 @@
       &--md-large {
         width: 65%;
       }
+      &--md-small {
+        width: 30%;
+      }
     }
 
     &-right {
+      &--md-large {
+        width: 65%;
+      }
       &--md-small {
         width: 30%;
+      }
+    }
+
+    &.order-invers-lg {
+      .card-ct-left {
+        order: -1;
       }
     }
 
@@ -142,9 +168,15 @@
       &--md-large {
         width: 65%;
       }
+      &--md-small {
+        width: 30%;
+      }
     }
 
     &-right {
+      &--md-large {
+        width: 65%;
+      }
       &--md-small {
         width: 30%;
       }
