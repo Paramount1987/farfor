@@ -1,0 +1,30 @@
+{% set items = [
+    {
+        pic: 'images/tmp/cln-1.png',
+        title: 'Декоративная тарелка с рисунком в стиле «Шинуазри». Цветная печать.',
+        text: 'Прекрасные чайные сервизы, декорированные кобальтовым крытьем, цветочными резервами и видовой росписью
+        на белом фоне, показывают, что Корниловы могли быть прекрасными.'
+    },
+    {
+        pic: 'images/tmp/cln-2.png',
+        title: 'Декоративная тарелка с рисунком в стиле «Шинуазри». Цветная печать.',
+        text: 'Прекрасные чайные сервизы, декорированные кобальтовым крытьем, цветочными резервами и видовой росписью
+        на белом фоне, показывают, что Корниловы могли быть прекрасными.'
+    }
+] %}
+
+<ul class="cln-list">
+    {% for item in items %}
+    <li>
+        <div class="cln-item">
+            <div class="cln-item-left">
+                <img src="{{ item.pic }}" alt="" class="cln-item__pic">
+            </div>
+            <div class="cln-item-right">
+                <h4 class="cln-item__title txt-white">{{ item.title }}</h4>
+                <p class="cln-item__p txt-white">{{ item.text }}</p>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

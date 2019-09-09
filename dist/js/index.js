@@ -10822,8 +10822,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_card_slider__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_history_slider__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_intro_slider__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_gallery_slider__ = __webpack_require__(7);
  // components
 //----------------------------------------------
+
 
 
 
@@ -10833,16 +10835,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 window.$ = __webpack_require__(0);
 window.jQuery = window.$;
 
-__webpack_require__(7); // utils
+__webpack_require__(8); // utils
 //----------------------------------------------
 
 
-__webpack_require__(18);
+__webpack_require__(19);
 
 $(document).ready(function () {
   Object(__WEBPACK_IMPORTED_MODULE_1__components_card_slider__["a" /* default */])();
   Object(__WEBPACK_IMPORTED_MODULE_2__components_history_slider__["a" /* default */])();
   Object(__WEBPACK_IMPORTED_MODULE_3__components_intro_slider__["a" /* default */])();
+  Object(__WEBPACK_IMPORTED_MODULE_4__components_gallery_slider__["a" /* default */])();
 });
 
 /***/ }),
@@ -10936,13 +10939,30 @@ var introSliderInit = function introSliderInit() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+var gallerySliderInit = function gallerySliderInit() {
+  $('.js-gallery-slider').each(function init() {
+    /* global Swiper */
+    var swiper = new Swiper(this, {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (gallerySliderInit);
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__swiper__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__swiper__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__swiper__);
 
 window.Swiper = __WEBPACK_IMPORTED_MODULE_0__swiper___default.a;
-
-__webpack_require__(9);
 
 __webpack_require__(10);
 
@@ -10956,10 +10976,12 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-__webpack_require__(17);
+__webpack_require__(16);
+
+__webpack_require__(18);
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -19509,7 +19531,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _type
 });
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19780,7 +19802,7 @@ var Tab = function ($) {
 /* harmony default export */ __webpack_exports__["default"] = (Tab);
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20177,7 +20199,7 @@ var Collapse = function ($) {
 /* harmony default export */ __webpack_exports__["default"] = (Collapse);
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20378,7 +20400,7 @@ var Alert = function ($) {
 /* harmony default export */ __webpack_exports__["default"] = (Alert);
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20561,7 +20583,7 @@ var Button = function ($) {
 /* harmony default export */ __webpack_exports__["default"] = (Button);
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -23353,7 +23375,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -24100,7 +24122,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -24478,10 +24500,10 @@ $jscomp.polyfill("Array.prototype.find", function (a) {
     a.jMaskGlobals.watchDataMask && a.applyDataMask();
   }, g.watchInterval);
 }, window.jQuery, window.Zepto);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 var g;
@@ -24508,7 +24530,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -25177,18 +25199,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
+__webpack_require__(20);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_modernizr__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_modernizr__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_modernizr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_modernizr__);
 
 var isWin = /windows/gi.test(navigator.userAgent);
@@ -25215,7 +25237,7 @@ __WEBPACK_IMPORTED_MODULE_0_modernizr___default.a.addTest('edge', isEdge);
 __WEBPACK_IMPORTED_MODULE_0_modernizr___default.a.addTest('windows', isWin);
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 ;(function(window){

@@ -5,6 +5,7 @@ import '../styles/index.scss';
 import cardSliderInit from './components/card-slider';
 import historySliderInit from './components/history-slider';
 import introSliderInit from './components/intro-slider';
+import gallerySliderInit from './components/gallery-slider';
 
 // libs
 //----------------------------------------------
@@ -22,4 +23,5 @@ $(document).ready(() => {
   cardSliderInit();
   historySliderInit();
   introSliderInit();
+  gallerySliderInit();
 });
