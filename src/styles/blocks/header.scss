@@ -2,6 +2,14 @@
   padding: 10px 30px;
   background-color: $black;
 
+  &.is-fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   &-inner {
     max-width: 1780px;
     margin: 0 auto;
@@ -25,6 +33,18 @@
     background: none;
     padding: 0;
     border: none;
+    outline: none !important;
+    color: $white;
+    cursor: pointer;
+
+    &.is-hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: #8a8a8a;
+    }
 
     svg {
       width: 31px;

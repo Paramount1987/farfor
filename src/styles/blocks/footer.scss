@@ -39,6 +39,10 @@
 
   &__link {
     color: $white;
+
+    &:hover {
+      color: $red;
+    }
   }
 
   &__phone {

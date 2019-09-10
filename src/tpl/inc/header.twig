@@ -10,10 +10,27 @@
                 </a>
             </div>
             <div class="header-col">
-                <button class="header__btn">
+                <button class="header__btn js-open-nav">
                     {% include "./svg/btn-menu.svg" %}
                 </button>
             </div>
         </div>
     </div>
+
+    <nav class="nav">
+        <button class="nav__btn js-close-nav">
+            {% include "./svg/close.svg" %}
+        </button>
+        <ul class="nav-list">
+            <li>
+                <a href="#" class="nav__link">Коллекции</a>
+            </li>
+            <li>
+                <a href="#" class="nav__link">О коллекционере</a>
+            </li>
+            <li>
+                <a href="#" class="nav__link">Пресса о нас</a>
+            </li>
+        </ul>
+    </nav>
 </header>

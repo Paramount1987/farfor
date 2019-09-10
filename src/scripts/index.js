@@ -7,6 +7,7 @@ import historySliderInit from './components/history-slider';
 import introSliderInit from './components/intro-slider';
 import gallerySliderInit from './components/gallery-slider';
 import catalogFilter from './components/catalog';
+import navInit from './components/nav';
 
 // libs
 //----------------------------------------------
@@ -25,5 +26,6 @@ $(document).ready(() => {
   historySliderInit();
   introSliderInit();
   gallerySliderInit();
+  navInit();
   catalogFilter.init();
 });
