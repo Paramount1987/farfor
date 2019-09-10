@@ -13,9 +13,18 @@
     font-size: 30px;
     color: $red;
     text-decoration: none;
+    font-family: $font-Vollkorn;
 
     &.is-active {
       color: #929292;
+    }
+
+    &--white {
+      color: $white;
+
+      &.is-active {
+        color: $red;
+      }
     }
   }
 

@@ -10,12 +10,25 @@
         </div>
     </section>
 
-    <section class="ctlg-container">
+    <section class="ctlg-container pb-sm-5">
         <div class="ctlg-left">
-
+            {% include "inc/pages/catalog/catalog-filter.twig" %}
         </div>
         <div class="ctlg-right">
             {% include "inc/pages/catalog/catalog-list.twig" %}
+        </div>
+    </section>
+
+    <section class="bg-black border-b-gray pb-6">
+        <div class="container">
+            <ul class="pagination">
+                <li class="page-item"><span class="page-link page-link--white is-active">1</span></li>
+                <li class="page-item"><a class="page-link page-link--white" href="#">2</a></li>
+                <li class="page-item"><a class="page-link page-link--white" href="#">3</a></li>
+                <li class="page-item"><a class="page-link page-link--white" href="#">4</a></li>
+                <li class="page-item"><span class="page-link page-link--white">...</span></li>
+                <li class="page-item"><a class="page-link page-link--white" href="#">10</a></li>
+            </ul>
         </div>
     </section>
 

@@ -10823,8 +10823,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_history_slider__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_intro_slider__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_gallery_slider__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_catalog__ = __webpack_require__(31);
  // components
 //----------------------------------------------
+
 
 
 
@@ -10846,6 +10848,7 @@ $(document).ready(function () {
   Object(__WEBPACK_IMPORTED_MODULE_2__components_history_slider__["a" /* default */])();
   Object(__WEBPACK_IMPORTED_MODULE_3__components_intro_slider__["a" /* default */])();
   Object(__WEBPACK_IMPORTED_MODULE_4__components_gallery_slider__["a" /* default */])();
+  __WEBPACK_IMPORTED_MODULE_5__components_catalog__["a" /* default */].init();
 });
 
 /***/ }),
@@ -25250,6 +25253,64 @@ module.exports = window.Modernizr;
 if (hadGlobal) { window.Modernizr = oldGlobal; }
 else { delete window.Modernizr; }
 })(window);
+
+/***/ }),
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var catalogFilter = {
+  $titles: null,
+  init: function init() {
+    this.$titles = $('.js-ctlg-title');
+    this.clickTitleHandler();
+  },
+  clickTitleHandler: function clickTitleHandler() {
+    var self = this;
+    this.$titles.click(function init() {
+      var $this = $(this);
+      var rel = $this.data('rel');
+      var $target = $("[data-target='".concat(rel, "']"));
+
+      if (!self.isMobile()) {
+        return;
+      }
+
+      if ($this.hasClass('is-active')) {
+        $this.removeClass('is-active');
+        self.hideFilter($target);
+      } else {
+        self.$titles.removeClass('is-active');
+        $this.addClass('is-active');
+        self.hideFilter();
+        self.showFilter($target);
+      }
+    });
+  },
+  showFilter: function showFilter($container) {
+    $container.slideDown(200);
+  },
+  hideFilter: function hideFilter($container) {
+    if ($container) {
+      $container.slideUp(200);
+    } else {
+      $('[data-target').slideUp();
+    }
+  },
+  isMobile: function isMobile() {
+    return window.matchMedia('(max-width: 767px)').matches;
+  }
+};
+/* harmony default export */ __webpack_exports__["a"] = (catalogFilter);
 
 /***/ })
 /******/ ]);

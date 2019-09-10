@@ -3938,9 +3938,14 @@ h1, .h1 {
   .pagination .page-link {
     font-size: 30px;
     color: #ab2415;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: Vollkorn, sans-serif; }
     .pagination .page-link.is-active {
       color: #929292; }
+    .pagination .page-link--white {
+      color: #fff; }
+      .pagination .page-link--white.is-active {
+        color: #ab2415; }
   .pagination a.page-link:hover {
     text-decoration: underline; }
 
@@ -4445,6 +4450,9 @@ h1, .h1 {
 .ctlg-container {
   padding: 0 50px; }
 
+.ctlg-left {
+  margin-bottom: 70px; }
+
 .ctlg-list {
   margin: 0;
   padding: 0;
@@ -4536,6 +4544,92 @@ h1, .h1 {
       font-size: 14px; }
     .ctlg-item__tag {
       font-size: 10px; } }
+
+.ctlg-filter__title {
+  margin-bottom: 30px;
+  font-family: Vollkorn, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer; }
+  .ctlg-filter__title:hover, .ctlg-filter__title.is-active {
+    color: #ab2415; }
+  .ctlg-filter__title svg {
+    position: relative;
+    top: -2px;
+    width: 13px;
+    height: 12px; }
+
+.ctlg-filter-list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-radius: 10px;
+  overflow: hidden; }
+  .ctlg-filter-list li {
+    margin-bottom: 1px; }
+
+.ctlg-filter__link {
+  display: block;
+  background-color: #373737;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .ctlg-filter-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .ctlg-filter-col {
+    width: 48.5%; }
+  .ctlg-filter-list {
+    display: block;
+    position: relative;
+    border-radius: 0; }
+    .ctlg-filter-list li {
+      margin-bottom: 15px; }
+  .ctlg-filter__title {
+    font-size: 20px; }
+    .ctlg-filter__title:hover, .ctlg-filter__title.is-active {
+      color: #fff; }
+    .ctlg-filter__title svg {
+      display: none; }
+  .ctlg-filter__link {
+    background-color: transparent;
+    padding: 10px 0;
+    border: 1px solid #b2b2b2;
+    color: #b2b2b2;
+    font-size: 16px; }
+    .ctlg-filter__link:hover {
+      color: #fff;
+      border-color: #fff; } }
+
+@media (min-width: 1024px) {
+  .ctlg-filter-col {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 45px; }
+  .ctlg-filter__title {
+    margin-bottom: 20px; } }
+
+@media (min-width: 1366px) {
+  .ctlg-filter-col {
+    max-width: 100%; } }
 
 .wrapper {
   overflow: hidden; }
