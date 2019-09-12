@@ -5,7 +5,12 @@
   right: 0;
   bottom: 0;
   padding: 45px 50px;
-  background-color: $black;
+  background-image: url('../images/pattern-black.png');
+
+  &__black {
+    background-color: $black;
+    background-image: none;
+  }
 
   &-inner {
     max-width: 1780px;
