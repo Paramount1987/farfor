@@ -8,10 +8,6 @@ const introSliderInit = () => {
     const swiper = new Swiper(this, {
       slidesPerView: 5,
       spaceBetween: 20,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       // Responsive breakpoints
       breakpoints: {
         // when window width is <= 320px
@@ -29,8 +25,8 @@ const introSliderInit = () => {
       },
     });
 
-    const $arrows = $this.find('.js-intro-arrow');
-    $arrowsWrapper.append($arrows);
+    // const $arrows = $this.find('.js-intro-arrow');
+    // $arrowsWrapper.append($arrows);
   });
 };
 
