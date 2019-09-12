@@ -11,6 +11,8 @@
   }
 
   &-inner {
+    position: relative;
+    z-index: 10;
     max-width: 1780px;
     margin: 0 auto;
   }
@@ -26,6 +28,11 @@
     color: $white;
     font-size: 21px;
     text-decoration: none;
+    transition: .15s ease-in;
+
+    &:hover {
+      color: $red;
+    }
   }
 
   &__btn {
