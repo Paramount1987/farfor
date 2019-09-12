@@ -67,11 +67,11 @@ body {
  // background-color: $body-bg; // 2
 
   @include media-breakpoint-up(sm) {
-    margin-bottom: 347px;
+    margin-bottom: 312px;
   }
 
   @include media-breakpoint-up(md) {
-    margin-bottom: 353px;
+    margin-bottom: 334px;
     line-height: $line-height-md;
   }
 }

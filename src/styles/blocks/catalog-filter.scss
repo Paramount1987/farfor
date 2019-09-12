@@ -35,7 +35,7 @@
     overflow: hidden;
 
     li {
-      margin-bottom: 1px;
+      border-bottom: 1px solid $black;
     }
   }
 
@@ -47,6 +47,7 @@
     font-size: 22px;
     text-decoration: none;
     text-align: center;
+    transition: .15s ease-in;
   }
 
   @include media-breakpoint-up(sm) {
@@ -68,6 +69,7 @@
 
       li {
         margin-bottom: 15px;
+        border-bottom: none;
       }
     }
 
@@ -87,7 +89,7 @@
     &__link {
       background-color: transparent;
       padding: 10px 0;
-      border: 1px solid #b2b2b2;
+      border: 1px solid #737373;
       color: #b2b2b2;
       font-size: 16px;
 

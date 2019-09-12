@@ -29,6 +29,7 @@
     color: $red;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
 
     &:hover {
       text-decoration: underline;
@@ -40,12 +41,19 @@
     font-size: 22px;
   }
 
+  @include media-breakpoint-up(sm) {
+
+    &__p {
+      font-size: 16px;
+    }
+  }
+
   @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
 
     &-list {
-  
+
       li {
         &:not(:last-of-type) {
           margin-bottom: 70px;

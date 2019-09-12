@@ -57,7 +57,7 @@
     font-family: $font-Vollkorn;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 1.6px;
     color: $red;
     line-height: $line-height-md;
     text-transform: uppercase;
@@ -102,7 +102,7 @@
     }
 
     &__title {
-      padding: 0 25px;
+      //padding: 0 25px;
     }
 
     &__pic {
@@ -124,6 +124,11 @@
     }
 
     &-left {
+
+      &.mw-425 {
+        max-width: 425px;
+      }
+
       &--md-large {
         width: 65%;
       }
@@ -148,7 +153,7 @@
     }
 
     &__title {
-      padding: 0 10px;
+      //padding: 0 10px;
     }
 
     &__pic {
@@ -166,7 +171,7 @@
 
     &-left {
       &--md-large {
-        width: 65%;
+        width: 64%;
       }
       &--md-small {
         width: 30%;

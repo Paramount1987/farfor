@@ -47,7 +47,7 @@
     &-left {
       width: 300px;
     }
-  
+
     &-right {
       width: 65.7%;
     }
@@ -124,12 +124,14 @@
     display: block;
     margin-bottom: 10px;
     font-size: 20px;
+    color: #e0dcdc;
   }
 
   &__tag {
     display: block;
-    color: $red;
+    color: #c8685f;
     font-size: 14px;
+    letter-spacing: 1px;
     font-family: $font-Vollkorn;
     text-transform: uppercase;
   }

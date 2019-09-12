@@ -5,6 +5,11 @@
     .swiper-button-next,
     .swiper-button-prev {
       bottom: 10px;
+      transition: .15s ease-in;
+
+      &:hover {
+        opacity: .6;
+      }
     }
 
     .swiper-button-next {
@@ -45,7 +50,7 @@
   @include media-breakpoint-up(sm) {
     display: flex;
     justify-content: space-between;
-    
+
     &__slider {
       padding-bottom: 60px;
     }
@@ -87,6 +92,11 @@
   }
 
   @include media-breakpoint-up(lg) {
+
+    &-left {
+      margin-bottom: 0;
+    }
+
     &__slider {
       padding: 0;
 
@@ -102,7 +112,7 @@
           margin-top: -8px;
         }
       }
-  
+
       .swiper-button-next.swiper-button--vc {
         right: 0;
         transform: translate(0, 0);

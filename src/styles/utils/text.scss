@@ -12,6 +12,10 @@
     color: $red;
   }
 
+  &-red-l {
+    color: $red-l;
+  }
+
   &-vollkrn {
     font-family: $font-Vollkorn;
     font-size: 20px;
@@ -27,6 +31,14 @@
 
   &-14 {
     font-size: 14px;
+  }
+
+  &-lh-2 {
+    line-height: 2;
+  }
+
+  &-ls-16 {
+    letter-spacing: 1.6px;
   }
 
   @include media-breakpoint-up(sm) {

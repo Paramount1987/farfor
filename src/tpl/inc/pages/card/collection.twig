@@ -21,7 +21,7 @@
                 <img src="{{ item.pic }}" alt="" class="cln-item__pic">
             </div>
             <div class="cln-item-right">
-                <h4 class="cln-item__title txt-white">{{ item.title }}</h4>
+                <h4 class="cln-item__title txt-white">{{ item.title | raw }}</h4>
                 <p class="cln-item__p txt-white">{{ item.text }}</p>
             </div>
         </div>

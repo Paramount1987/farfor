@@ -39,6 +39,7 @@
 
   &__link {
     color: $white;
+    transition: .15s ease-in;
 
     &:hover {
       color: $red;
@@ -53,6 +54,7 @@
     padding: 75px;
 
     &__h4 {
+      margin-bottom: 15px;
       font-size: 40px;
     }
 

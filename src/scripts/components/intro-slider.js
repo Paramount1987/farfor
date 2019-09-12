@@ -18,8 +18,8 @@ const introSliderInit = () => {
         1023: {
           slidesPerView: 2,
         },
-        // when window width is <= 1366
-        1366: {
+        // when window width is <= 1440
+        1440: {
           slidesPerView: 3,
         },
         // when window width is <= 1900px
