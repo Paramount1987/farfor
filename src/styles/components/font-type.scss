@@ -50,6 +50,12 @@ mark,
 //
 // Media
 //
+@media (max-width: 479px) {
+  h1, .h1 {
+    font-size: 22px;
+  }
+}
+
 @include media-breakpoint-up(sm) {
 
   h1, .h1 {
